@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Yusei+Magic&display=swap');
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: -apple-system, sans-serif;
+}
+
+header {
+    h2 {
+        font-size: 40px;
+        color: aliceblue;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    p {
+        font-size: 25px;
+        color: chartreuse;
+        text-align: center;
+        margin: 40px 0;
+        letter-spacing: 1px;
+    }
+    position: relative;
+    background: url('tvShow.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    // height: 100%;
+    .showsHeader {
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        .shows {
+            width: 95%;
+            height: 650px;
+            background-color: rgba(228, 201, 201, 0.37);
+            border-radius: 10px;
+            box-shadow: rgba(255, 255, 255, 0.342) 10px 10px 5px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            font-family: 'Luxurious Roman', cursive;
+            .information {
+                position: relative;
+                width: 50%;
+                float: right;
+                height: 100%;
+                .dates:first-child {
+                    margin-top: 7vh;
+                }
+                .dates {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 4vh;
+                    span {
+                        margin-left: 10px;
+                        font-size: 15px;
+                    }
+                }
+                .dates:last-child {
+                    margin-top: 0;
+                    span {
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            img {
+                position: relative;
+                height: 90%;
+                margin: 5% 10px;
+                background-size: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+section.searchUser {
+    position: relative;
+    margin-top: 5vh;
+    text-align: center;
+    h1 {
+        font-family: 'Luxurious Roman', cursive;
+        font-size: 40px;
+    }
+    form {
+        margin-top: 30px;
+        input {
+            width: 30%;
+            height: 30px;
+            border: none;
+            border-bottom: 2px solid;
+            font-size: 25px;
+        }
+        input:focus {
+            outline: none;
+        }
+        input::placeholder {
+            text-align: center;
+        }
+        button {
+            margin-left: 20px;
+            height: 50px;
+            width: 50px;
+            border: none;
+            background-color: transparent;
+            i {
+                font-size: 30px;
+            }
+        }
+    }
+    .resultDiv {
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        .shows {
+            width: 95%;
+            height: 650px;
+            background-color: rgba(0, 0, 0, 0.37);
+            border-radius: 10px;
+            box-shadow: rgba(255, 255, 255, 0.342) 10px 10px 5px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            font-family: 'Luxurious Roman', cursive;
+            .information {
+                position: relative;
+                width: 50%;
+                float: right;
+                height: 100%;
+                button.comment {
+                    width: 200px;
+                }
+                .dates:first-child {
+                    margin-top: 7vh;
+                }
+                .dates {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 4vh;
+                    span {
+                        margin-left: 10px;
+                        font-size: 15px;
+                    }
+                }
+                .dates:last-child {
+                    margin-top: 0;
+                    span {
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            img {
+                position: relative;
+                height: 90%;
+                margin: 5% 10px;
+                background-size: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 5rem;
+    width: 100%;
+    min-height: 3.75rem;
+    background-color: #333333;
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: .5s ease;
+    position: relative;
+    bottom: 0;
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    p {
+        font-size: 20px;
+    }
+    i {
+        margin-left: 10px;
+        font-size: 25px;
+        transition: .5s ease;
+        border-radius: 50%;
+    }
+    i:hover {
+        transform: rotate(360deg);
+        font-size: 30px;
+        cursor: pointer;
+        background-color: white;
+        color: #000;
+        border: 1px solid transparent;
+    }
+}
+
+@media screen and (max-width:767px) {
+    * {
+        overflow-x: hidden;
+    }
+    header {
+        .showsHeader {
+            .shows {
+                overflow: hidden;
+                height: 300px;
+                .information {
+                    .dates {
+                        h1 {
+                            font-size: 10px;
+                        }
+                        span {
+                            font-size: 8px;
+                            p {
+                                font-size: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section.searchUser {
+        .resultDiv {
+            .shows {
+                overflow: hidden;
+                height: 300px;
+                .information {
+                    .dates {
+                        h1 {
+                            font-size: 10px;
+                        }
+                        span {
+                            font-size: 8px;
+                            p {
+                                font-size: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section.searchUser {
+        form {
+            input {
+                font-size: 15px;
+            }
+        }
+    }
+}
