@@ -596,4 +596,10 @@ p.commentp {
         margin: 15px;
         font-size: 30px;
     }
+    section.searchUser .resultDiv .shows .information::-webkit-scrollbar {
+    width: .5em;
+}
+    .comments::-webkit-scrollbar {
+    width: .5em;
+}
 }
