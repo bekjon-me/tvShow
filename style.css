@@ -574,6 +574,7 @@ p.commentp {
         margin-top: -3rem!important;
         padding: 0;
         height: 220px;
+        overflow: hidden;
     }
     button.submitComment {
         transform: translateY(-70px);
