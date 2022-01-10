@@ -535,7 +535,7 @@ p.commentp {
     }
     .comments {
         width: 95%;
-        height: 20rem;
+        height: 30rem;
         margin-left: 2%;
         margin-top: -1.2rem;
         background-color: rgba(0, 0, 0, 0.452);
@@ -586,8 +586,8 @@ p.commentp {
     }
     .commentBox {
         width: 90%;
-        height: 15rem;
-        margin-top: 50px;
+        height: 5rem;
+        margin-top: 30px;
         padding: 20px;
         font-size: 15px;
     }
