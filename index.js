@@ -80,7 +80,6 @@ document.getElementsByClassName('searchBtn')[0].addEventListener('click', (event
             <form class="formComment">
                 <input type="text" class="userName" placeholder="Enter your name" required>
                 <button class="submitComment">Submit</button>
-                <p class="required"></p>
             </form><i class="fas fa-times-circle"></i></div>
             `)
                 }
@@ -173,7 +172,7 @@ document.getElementsByClassName('searchBtn')[0].addEventListener('click', (event
                                     document.getElementsByClassName('userName')[index].value = '';
                                     document.getElementsByClassName('required')[0].innerHTML = "";
                                 } else {
-                                    document.getElementsByClassName('required')[0].innerHTML = "Please out these fields";
+                                    
                                 }
                             })
                             cancelBtn.addEventListener('click', () => {
