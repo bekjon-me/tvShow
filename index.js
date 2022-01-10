@@ -117,6 +117,7 @@ document.getElementsByClassName('searchBtn')[0].addEventListener('click', (event
                 for (let index = 0; index < commentBtn.length; index++) {
                     const element = commentBtn[index];
                     element.addEventListener('click', () => {
+I                       if(document.getElementsByClassName('comments')[index].style.display = "none") {
                         document.getElementsByClassName('comments')[index].style.display = "flex";
                         const submitBtn = document.getElementsByClassName('submitComment')[index];
                         const cancelBtn = document.getElementsByClassName('fa-times-circle')[index];
@@ -171,6 +172,7 @@ document.getElementsByClassName('searchBtn')[0].addEventListener('click', (event
                                 oldCommentDiv.appendChild(oldDiv)
                             }
                         }
+                       }
                     })
                 }
             })
